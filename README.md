@@ -32,3 +32,6 @@ Our website is inpired from tata health.
 There are several pages that  can be added like pharmacy and labs.
 We also aim to improve upon the appointement booking system.
 To integarte it with backend and makeit fully functional.
+
+## Link to the website
+https://a34048c5.mind-optimizers.pages.dev/
