@@ -2,6 +2,7 @@
 
 # Online Doctor Consultancy 
 (Check the master branch for the code)
+
 This website is developed for people to book appoinments with doctors of certain specialization and consult them from any corner of the world.
 During this hard time of global pandemic, people feared of going to the hospitals for their acute problems and so remained untreated. There were some who moved back to their home towns, while they were consulting a particular practitioner and so faced difficulties. 
 Since everything is now operating remotely, we thought of bringing specialists in direct contact with their patients. Patients can check ratings and feedback and then decide to book a doctor of their choice at minimal cost.
