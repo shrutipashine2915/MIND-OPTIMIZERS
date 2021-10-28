@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+    <link rel="stylesheet" href="../static/assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="./INDEX.html">Online Doctor Consultancy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./INDEX.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./search.html">Doctors</a>
+                    </li>
+
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="content">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-12 col-lg-4 col-xl-3 theiaStickySidebar">
+
+                    <form method="get" action="{% url 'search' %}">
+                        <div class="card search-filter">
+                            <div class="card-header">
+                                <h4 class="card-title mb-0">Search Filter</h4>
+                            </div>
+                            <div class="card-body">
+
+
+                                <div class="filter-widget">
+                                    <h4>Select Specialist</h4>
+                                    <div>
+                                        <label class="custom_check">
+                                        <input type="checkbox" name="query" value="pediatrician">
+                                        <span class="checkmark"></span> Pediatrician
+                                    </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom_check">
+                                        <input type="checkbox" name="query" value="psychiatrist">
+                                        <span class="checkmark"></span> Psychiatrist
+                                    </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom_check">
+                                        <input type="checkbox" name="query" value="dermatologist">
+                                        <span class="checkmark"></span> Dermatologist
+                                    </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom_check">
+                                        <input type="checkbox" name="query" value="ent specialist">
+                                        <span class="checkmark"></span> ENT Specialist
+                                    </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom_check">
+                                        <input type="checkbox" name="query" value="nutritionist">
+                                        <span class="checkmark"></span> Nutritionist
+                                    </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom_check">
+                                        <input type="checkbox" name="query" value="general physician">
+                                        <span class="checkmark"></span> General Physician
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="btn-search">
+                                    <button type="submit" class="btn btn-block">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Search Filter -->
+                    </form>
+
+                </div>
+
+                <div class="col-md-12 col-lg-8 col-xl-9">
+
+                    <h4>Check The Specialist</h4>
+
+
+                    <!-- Doctor Widget -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="doctor-widget">
+                                <div class="doc-info-left">
+                                    <div class="doctor-img">
+                                        <a href=#>
+                                            <img src="../static/assets/img/doctors/doctor-03.jpg" class="img-fluid" alt="User Image">
+                                        </a>
+                                    </div>
+                                    <div class="doc-info-cont">
+                                        <h4 class="doc-name">Doctor Name</h4>
+                                        <p class="doc-speciality">General Physician</p>
+
+                                        <div class="clinic-services">
+
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doc-info-right">
+                                    <div class="clini-infos">
+                                        <ul>
+                                            <li><i class="far fa-thumbs-up"></i> 98%</li>
+                                            <li><i class="far fa-comment"></i> 17 Feedback</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="clinic-booking">
+                                        <a class="view-pro-btn" href=#>View Profile</a>
+                                        <a class="apt-btn" href="book-slot.html">Book Appointment</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Doctor Widget -->
+                    <!-- Doctor Widget -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="doctor-widget">
+                                <div class="doc-info-left">
+                                    <div class="doctor-img">
+                                        <a href=#>
+                                            <img src="../static/assets/img/doctors/doctor-04.jpg" class="img-fluid" alt="User Image">
+                                        </a>
+                                    </div>
+                                    <div class="doc-info-cont">
+                                        <h4 class="doc-name">Doctor Name</h4>
+                                        <p class="doc-speciality">General Physician</p>
+
+                                        <div class="clinic-services">
+
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doc-info-right">
+                                    <div class="clini-infos">
+                                        <ul>
+                                            <li><i class="far fa-thumbs-up"></i> 90%</li>
+                                            <li><i class="far fa-comment"></i> 20 Feedback</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="clinic-booking">
+                                        <a class="view-pro-btn" href=#>View Profile</a>
+                                        <a class="apt-btn" href="book-slot.html">Book Appointment</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Doctor Widget -->
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+
+        <div class=" text-center py-3" style="background-color: gray;">
+            Made with an intention of helping people 👨‍⚕️
+        </div>
+
+    </footer>
+    <!-- Footer -->
+    <script src="../static/assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../static/assets/js/bootstrap.min.js"></script>
+    <script src="../static/assets/js/circle-progress.min.js"></script>
+    <script src="../static/assets/js/map.js"></script>
+    <script src="../static/assets/js/moment.min.js"></script>
+    <script src="../static/assets/js/popper.min.js"></script>
+    <script src="../static/assets/js/profile-settings.js"></script>
+    <script src="../static/assets/js/script.js"></script>
+    <script src="../static/assets/js/slick.js"></script>
+    <script src="../static/assets/js/jquery.min.js"></script>
+
+</body>
+
+</html>
